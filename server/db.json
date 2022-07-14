@@ -1,0 +1,34 @@
+{
+  "badges": [
+    {
+      "firstName": "fabian",
+      "lastName": "pedraza",
+      "email": "fabianpb923@gmail.com",
+      "address": "chia, cundinamarca",
+      "phone": "3216549877",
+      "dateBirthday": "1991-06-28",
+      "twitter": "fabianpedd",
+      "id": "PH1ZdLZ"
+    },
+    {
+      "firstName": "zoe",
+      "lastName": "martines",
+      "email": "david.osorio@justo.mx",
+      "address": "chia, cundinamarca",
+      "phone": "3216549877",
+      "dateBirthday": "2016-10-19",
+      "twitter": "davodss",
+      "id": "UoC8PLA"
+    },
+    {
+      "firstName": "andres",
+      "lastName": "bohorquez",
+      "email": "fabian.pedraza@gml.co",
+      "address": "bogota colombia",
+      "phone": "3216549875",
+      "dateBirthday": "2001-06-28",
+      "twitter": "andress",
+      "id": "ls3TWZ6"
+    }
+  ]
+}

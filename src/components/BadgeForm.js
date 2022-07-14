@@ -1,0 +1,102 @@
+import React from 'react';
+
+class BadgeForm extends React.Component {
+  handleClick = e => {
+    console.log('Button was clicked');
+  };
+
+  render() {
+    return (
+      <div>
+        <form onSubmit={this.props.onSubmit}>
+          <div className="form-group">
+            <label>Nombre</label>
+            <input
+              onChange={this.props.onChange}
+              className="form-control"
+              type="text"
+              name="firstName"
+              value={this.props.formValues.firstName}
+            />
+          </div>
+
+          <div className="form-group">
+            <label>Apellido</label>
+            <input
+              onChange={this.props.onChange}
+              className="form-control"
+              type="text"
+              name="lastName"
+              value={this.props.formValues.lastName}
+            />
+          </div>
+
+          <div className="form-group">
+            <label>Email</label>
+            <input
+              onChange={this.props.onChange}
+              className="form-control"
+              type="email"
+              name="email"
+              value={this.props.formValues.email}
+            />
+          </div>
+
+          <div className="form-group">
+            <label>Direccion</label>
+            <input
+              onChange={this.props.onChange}
+              className="form-control"
+              type="text"
+              name="address"
+              value={this.props.formValues.address}
+            />
+          </div>
+
+          <div className="form-group">
+            <label>Telefono</label>
+            <input
+              onChange={this.props.onChange}
+              className="form-control"
+              type="tel"
+              name="phone"
+              value={this.props.formValues.phone}
+            />
+          </div>
+
+          <div className="form-group">
+            <label>Fecha de nacimiento</label>
+            <input
+              onChange={this.props.onChange}
+              className="form-control"
+              type="date"
+              name="dateBirthday"
+              value={this.props.formValues.dateBirthday}
+            />
+          </div>
+
+          <div className="form-group">
+            <label>Twitter</label>
+            <input
+              onChange={this.props.onChange}
+              className="form-control"
+              type="text"
+              name="twitter"
+              value={this.props.formValues.twitter}
+            />
+          </div>
+
+          <button onClick={this.handleClick} className="btn btn-primary">
+            Agregar
+          </button>
+
+          {this.props.error && (
+            <p className="text-danger">{this.props.error.message}</p>
+          )}
+        </form>
+      </div>
+    );
+  }
+}
+
+export default BadgeForm;
